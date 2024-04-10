@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --secondary-color : rgb(60, 207, 240);
+    --sombra: rgba(0, 0, 0, 0.400);
+}
+
+
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 940px;
+    margin: 3rem auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 8px 8px var(--sombra);
+}
+
+.relogio {
+    font-size: 2.5em;
+}
+.pausado {
+    color: red;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+form input:focus {
+    outline: 2px solid var(--secondary-color);
+}
+
+form button {
+    border: none;
+    background-color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 3px 6px var(--sombra);
+    height: 60px;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+form button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 2px 6px 5px var(--sombra);
+    border-radius: 35px;
+    transition: ease-in-out 400ms;
+}
+
+form button:active {
+    background-color: var(--primary-color);
+    color: lawngreen;
+    transition: .2s;
+}
